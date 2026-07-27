@@ -1,0 +1,245 @@
+[gd_scene format=3 uid="uid://dnyiopcrgcf5m"]
+
+[ext_resource type="Script" uid="uid://dev7u36n72ah4" path="res://house.gd" id="1_hfkix"]
+[ext_resource type="PackedScene" uid="uid://cdbevttarpeqk" path="res://him.tscn" id="2_metfq"]
+[ext_resource type="Texture2D" uid="uid://dgpq8fmrfah67" path="res://mainper/Room.png" id="2_o1325"]
+[ext_resource type="PackedScene" uid="uid://d2la5nj6mefwn" path="res://textbox.tscn" id="3_6syyc"]
+[ext_resource type="Texture2D" uid="uid://co8brasm48s58" path="res://mainper/Phone up.png" id="3_vy7fe"]
+[ext_resource type="Texture2D" uid="uid://cas7ty5i3vw1o" path="res://mainper/Tv1.png" id="6_2y50f"]
+[ext_resource type="Texture2D" uid="uid://bf3r3eksqsiqc" path="res://mainper/Tv2.png" id="7_obbqb"]
+[ext_resource type="AudioStream" uid="uid://c681ixb54do8d" path="res://voicebosch-sizzling-frying-pan-201293.mp3" id="8_11uyb"]
+[ext_resource type="AudioStream" uid="uid://dvbbjift2fjbf" path="res://gun.mp3" id="8_cgaom"]
+[ext_resource type="Texture2D" uid="uid://canwjm3gq8aap" path="res://mainper/Eng3.png" id="8_obbqb"]
+[ext_resource type="AudioStream" uid="uid://kfrjfsve20qa" path="res://yourugor-tv-static-noise-291374.mp3" id="8_qj8ql"]
+[ext_resource type="Texture2D" uid="uid://bfcosni620k2f" path="res://mainper/Eng2.png" id="9_0l6dv"]
+[ext_resource type="Texture2D" uid="uid://bhw2c2q8djjpf" path="res://mainper/Eng1.png" id="10_k3v7f"]
+[ext_resource type="Script" uid="uid://6iv1l1a0eg76" path="res://label.gd" id="11_k3v7f"]
+[ext_resource type="Script" uid="uid://cpbiybg1ij6e0" path="res://label_2.gd" id="12_q8yd6"]
+[ext_resource type="AudioStream" uid="uid://8bdcy7as14at" path="res://freesound_community-cellphone-ringing-40837.mp3" id="13_fl8vv"]
+[ext_resource type="AudioStream" uid="uid://bgvbnpe3wul0o" path="res://freesound_community-shao_isabelle_2014_2015_hangup-104402.mp3" id="14_umavc"]
+[ext_resource type="Texture2D" uid="uid://de3ji0ppctu0b" path="res://mainper/Dark.png" id="15_shbcp"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i5q7f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_2y50f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_obbqb")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=660902255]
+script = ExtResource("1_hfkix")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=241303930]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(28.888323, 16.482897)
+
+[node name="Room" type="Sprite2D" parent="." unique_id=767795912]
+visible = false
+position = Vector2(583, 314)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_o1325")
+
+[node name="PhoneUp" type="Sprite2D" parent="." unique_id=2087641455]
+visible = false
+position = Vector2(582, 310)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_vy7fe")
+
+[node name="him" parent="." unique_id=1760436320 instance=ExtResource("2_metfq")]
+visible = false
+position = Vector2(68, 432)
+scale = Vector2(0.75, 0.75)
+
+[node name="textbox" parent="." unique_id=904479697 instance=ExtResource("3_6syyc")]
+visible = false
+position = Vector2(274, 500.00006)
+scale = Vector2(0.175, 0.175)
+
+[node name="phone btn" type="Button" parent="." unique_id=1010123877]
+offset_left = 120.0
+offset_top = 113.0
+offset_right = 128.0
+offset_bottom = 121.0
+scale = Vector2(5.285582, 4.6052465)
+flat = true
+
+[node name="drawer btn" type="Button" parent="." unique_id=1459539897]
+offset_left = 79.00001
+offset_top = 152.99998
+offset_right = 87.00001
+offset_bottom = 160.99998
+scale = Vector2(14.675032, 8.399562)
+flat = true
+
+[node name="couch btn" type="Button" parent="." unique_id=1524481821]
+offset_left = 270.0
+offset_top = 70.999985
+offset_right = 278.0
+offset_bottom = 78.999985
+scale = Vector2(27.556335, 17.900057)
+flat = true
+
+[node name="door btn" type="Button" parent="." unique_id=1369196072]
+offset_left = 603.0
+offset_top = 15.000008
+offset_right = 611.0
+offset_bottom = 23.000008
+scale = Vector2(22.622154, 24.908207)
+flat = true
+
+[node name="tv btn" type="Button" parent="." unique_id=17177259]
+offset_left = 991.0
+offset_top = 160.0
+offset_right = 999.0
+offset_bottom = 168.0
+scale = Vector2(16.233103, 19.815653)
+flat = true
+
+[node name="Label" type="Label" parent="." unique_id=1509123739]
+offset_left = 22.0
+offset_top = 14.0
+offset_right = 62.0
+offset_bottom = 37.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+script = ExtResource("11_k3v7f")
+
+[node name="textfrbox" type="Label" parent="." unique_id=899805505]
+offset_left = 259.0
+offset_top = 518.0
+offset_right = 299.0
+offset_bottom = 541.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+script = ExtResource("12_q8yd6")
+
+[node name="Gun" type="AudioStreamPlayer" parent="textfrbox" unique_id=1611742090]
+stream = ExtResource("8_cgaom")
+
+[node name="VoiceboschSizzlingFryingPan201293" type="AudioStreamPlayer" parent="textfrbox" unique_id=1584680290]
+stream = ExtResource("8_11uyb")
+
+[node name="YourugorTvStaticNoise291374" type="AudioStreamPlayer" parent="textfrbox" unique_id=1951926846]
+stream = ExtResource("8_qj8ql")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="textfrbox" unique_id=471125570]
+visible = false
+position = Vector2(-259, -518)
+
+[node name="Eng1" type="Sprite2D" parent="textfrbox/CharacterBody2D" unique_id=1902018365]
+position = Vector2(48, 41)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("10_k3v7f")
+
+[node name="Eng2" type="Sprite2D" parent="textfrbox/CharacterBody2D" unique_id=1498997177]
+visible = false
+position = Vector2(48, 41)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("9_0l6dv")
+
+[node name="Eng3" type="Sprite2D" parent="textfrbox/CharacterBody2D" unique_id=1246051679]
+position = Vector2(48, 41.000004)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("8_obbqb")
+
+[node name="yes" type="Button" parent="textfrbox" unique_id=2065652307]
+visible = false
+layout_mode = 0
+offset_left = 312.0
+offset_top = -43.0
+offset_right = 347.0
+offset_bottom = -12.0
+text = "Yes"
+
+[node name="no" type="Button" parent="textfrbox" unique_id=428321964]
+visible = false
+layout_mode = 0
+offset_left = 314.0
+offset_top = 24.0
+offset_right = 349.0
+offset_bottom = 55.0
+text = "No
+"
+
+[node name="FreesoundCommunityCellphoneRinging40837" type="AudioStreamPlayer" parent="textfrbox" unique_id=1313123966]
+stream = ExtResource("13_fl8vv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="textfrbox" unique_id=1463117317]
+visible = false
+position = Vector2(805.0001, -286)
+rotation = -0.6124423
+scale = Vector2(0.11954388, 0.26585978)
+sprite_frames = SubResource("SpriteFrames_i5q7f")
+frame_progress = 0.8649086
+
+[node name="FreesoundCommunityShaoIsabelle20142015Hangup104402" type="AudioStreamPlayer" parent="textfrbox" unique_id=1201604532]
+stream = ExtResource("14_umavc")
+
+[node name="Dark" type="Sprite2D" parent="textfrbox" unique_id=1910142940]
+visible = false
+position = Vector2(-187, -203)
+scale = Vector2(0.16811673, 0.16112131)
+texture = ExtResource("15_shbcp")
+
+[node name="ColorRect" type="ColorRect" parent="textfrbox" unique_id=325878000]
+visible = false
+layout_mode = 0
+offset_left = -271.0
+offset_top = -531.0
+offset_right = 1087.0
+offset_bottom = 212.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="textfrbox" unique_id=973314003]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.5
+offset_left = 39.0
+offset_top = -304.0
+offset_right = 555.0
+offset_bottom = -121.0
+
+[node name="Label" type="Label" parent="textfrbox/ColorRect2" unique_id=1076524120]
+layout_mode = 0
+offset_left = 188.0
+offset_top = 60.0
+offset_right = 353.0
+offset_bottom = 109.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "And so, out of energy
+he ended his last day"
+
+[connection signal="mouse_entered" from="phone btn" to="." method="_on_phone_btn_mouse_entered"]
+[connection signal="mouse_exited" from="phone btn" to="." method="_on_phone_btn_mouse_exited"]
+[connection signal="pressed" from="phone btn" to="textfrbox" method="_on_phone_btn_pressed"]
+[connection signal="mouse_entered" from="drawer btn" to="." method="_on_drawer_btn_mouse_entered"]
+[connection signal="mouse_exited" from="drawer btn" to="." method="_on_drawer_btn_mouse_exited"]
+[connection signal="pressed" from="drawer btn" to="." method="drawer"]
+[connection signal="pressed" from="drawer btn" to="textfrbox" method="_on_drawer_btn_pressed"]
+[connection signal="mouse_entered" from="couch btn" to="." method="_on_couch_btn_mouse_entered"]
+[connection signal="mouse_exited" from="couch btn" to="." method="_on_couch_btn_mouse_exited"]
+[connection signal="pressed" from="couch btn" to="." method="couch"]
+[connection signal="pressed" from="couch btn" to="textfrbox" method="_on_couch_btn_pressed"]
+[connection signal="mouse_entered" from="door btn" to="." method="_on_door_btn_mouse_entered"]
+[connection signal="mouse_exited" from="door btn" to="." method="_on_door_btn_mouse_exited"]
+[connection signal="pressed" from="door btn" to="." method="door"]
+[connection signal="pressed" from="door btn" to="textfrbox" method="_on_door_btn_pressed"]
+[connection signal="mouse_entered" from="tv btn" to="." method="_on_tv_btn_mouse_entered"]
+[connection signal="mouse_exited" from="tv btn" to="." method="_on_tv_btn_mouse_exited"]
+[connection signal="pressed" from="tv btn" to="." method="tv"]
+[connection signal="pressed" from="tv btn" to="textfrbox" method="_on_tv_btn_pressed"]
+[connection signal="finished" from="textfrbox/Gun" to="." method="_on_gun_finished"]
+[connection signal="finished" from="textfrbox/Gun" to="textfrbox" method="_on_gun_finished"]
+[connection signal="finished" from="textfrbox/YourugorTvStaticNoise291374" to="textfrbox" method="_on_yourugor_tv_static_noise_291374_finished"]
+[connection signal="pressed" from="textfrbox/yes" to="." method="_on_yes_pressed"]
+[connection signal="pressed" from="textfrbox/yes" to="textfrbox" method="_on_yes_pressed"]
+[connection signal="pressed" from="textfrbox/no" to="." method="_on_no_pressed"]
+[connection signal="pressed" from="textfrbox/no" to="textfrbox" method="_on_no_pressed"]
+[connection signal="finished" from="textfrbox/FreesoundCommunityCellphoneRinging40837" to="textfrbox" method="_on_freesound_community_cellphone_ringing_40837_finished"]

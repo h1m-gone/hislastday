@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://cdbevttarpeqk"]
+
+[ext_resource type="Texture2D" uid="uid://bxdx6751hw7dc" path="res://bdy.png" id="1_b5e6j"]
+[ext_resource type="Texture2D" uid="uid://pbo85pcvydt1" path="res://mainper/sadeyee.png" id="2_231uc"]
+[ext_resource type="Texture2D" uid="uid://bdth18us7pog4" path="res://mainper/frowm.png" id="3_gdk83"]
+[ext_resource type="Texture2D" uid="uid://gabia4k2l3us" path="res://mainper/eye.png" id="3_gsx7x"]
+[ext_resource type="Texture2D" uid="uid://dgmpxe7db3t36" path="res://mainper/smle.png" id="5_fphyg"]
+[ext_resource type="Texture2D" uid="uid://br1xnyi23tuxd" path="res://mainper/Phone.png" id="6_gsx7x"]
+[ext_resource type="Texture2D" uid="uid://de3ji0ppctu0b" path="res://mainper/Dark.png" id="7_fphyg"]
+
+[node name="him" type="CharacterBody2D" unique_id=1760436320]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=956530207]
+offset_left = -75.00001
+offset_top = -234.99998
+offset_right = -35.000008
+offset_bottom = -194.99998
+scale = Vector2(4.621683, 12.265184)
+
+[node name="Bdy" type="Sprite2D" parent="." unique_id=732327280]
+position = Vector2(-3, -1)
+texture = ExtResource("1_b5e6j")
+
+[node name="Sadeyee" type="Sprite2D" parent="." unique_id=590771049]
+position = Vector2(-7, 6)
+texture = ExtResource("2_231uc")
+
+[node name="Eye" type="Sprite2D" parent="." unique_id=638301663]
+visible = false
+position = Vector2(-5.967724, 0.7807045)
+scale = Vector2(1.1, 0.98)
+texture = ExtResource("3_gsx7x")
+
+[node name="Frowm" type="Sprite2D" parent="." unique_id=1270793366]
+position = Vector2(-3, 3)
+texture = ExtResource("3_gdk83")
+
+[node name="Smle" type="Sprite2D" parent="." unique_id=1427982031]
+visible = false
+position = Vector2(-3.078022, 4.315071)
+texture = ExtResource("5_fphyg")
+
+[node name="Phone" type="Sprite2D" parent="." unique_id=589479230]
+visible = false
+position = Vector2(-68.09456, -119.95924)
+rotation = -1.8274882
+scale = Vector2(0.55, 0.55)
+texture = ExtResource("6_gsx7x")
+
+[node name="Dark" type="Sprite2D" parent="." unique_id=1081870420]
+visible = false
+position = Vector2(-4.6938286, -157.44238)
+scale = Vector2(0.16811673, 0.16112131)
+texture = ExtResource("7_fphyg")

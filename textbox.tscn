@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://d2la5nj6mefwn"]
+
+[ext_resource type="Script" uid="uid://b1ybqf8xcv433" path="res://textbox.gd" id="1_b4wmp"]
+[ext_resource type="Texture2D" uid="uid://doa27ab6rs36p" path="res://mainper/Break.png" id="2_3pwef"]
+[ext_resource type="Texture2D" uid="uid://d4gbjqcjvo58h" path="res://mainper/Calm.png" id="3_k5ndg"]
+[ext_resource type="Texture2D" uid="uid://bmnhfjt3tw8ff" path="res://mainper/Uneasy.png" id="4_bx1jh"]
+[ext_resource type="Texture2D" uid="uid://c8vkr1f6w03dn" path="res://mainper/Him.png" id="5_55v5i"]
+
+[node name="textbox" type="CharacterBody2D" unique_id=904479697]
+script = ExtResource("1_b4wmp")
+
+[node name="Break" type="Sprite2D" parent="." unique_id=1434048370]
+visible = false
+position = Vector2(466, 232)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_3pwef")
+
+[node name="Calm" type="Sprite2D" parent="." unique_id=2122160183]
+position = Vector2(484, 232)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_k5ndg")
+
+[node name="Uneasy" type="Sprite2D" parent="." unique_id=1084725785]
+visible = false
+position = Vector2(479, 229)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_bx1jh")
+
+[node name="Him" type="Sprite2D" parent="." unique_id=394549890]
+position = Vector2(-556, -222)
+texture = ExtResource("5_55v5i")
